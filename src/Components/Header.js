@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { useState } from "react";
+
 export const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +19,7 @@ export const Header = () => {
   }, []);
 
   const onUpdateActiveLink = (value) => {
-    set;
+    setActiveLink(value);
   };
 
   return (
@@ -35,7 +35,7 @@ export const Header = () => {
                 className={
                   activeLink == "home" ? "active navbar-link" : "navbar-Link"
                 }
-                onClick={() => onUpdateActive("home")}
+                onClick={() => onUpdateActiveLink("home")}
               >
                 Home
               </Nav.Link>
@@ -44,7 +44,7 @@ export const Header = () => {
                 className={
                   activeLink == "skills" ? "active navbar-link" : "navbar-Link"
                 }
-                onClick={() => onUpdateActive("skills")}
+                onClick={() => onUpdateActiveLink("skills")}
               >
                 Skills
               </Nav.Link>
@@ -55,11 +55,31 @@ export const Header = () => {
                     ? "active navbar-link"
                     : "navbar-Link"
                 }
-                onClick={() => onUpdateActive("projects")}
+                onClick={() => onUpdateActiveLink("projects")}
               >
                 Projects
               </Nav.Link>
             </Nav>
+
+            <span className="navbar-text">
+              <div className="social-icon">
+                <a
+                  href="https://www.linkedin.com/in/prem-acharya/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
