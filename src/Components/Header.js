@@ -79,6 +79,9 @@ export const Header = () => {
                   <i class="fa-brands fa-youtube"></i>
                 </a>
               </div>
+              <button className="vvd" onClick={() => console.log("connect")}>
+                <span>Contact Me</span>
+              </button>
             </span>
           </Navbar.Collapse>
         </Container>
