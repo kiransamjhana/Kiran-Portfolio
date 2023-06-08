@@ -21,7 +21,10 @@ export const ContactMe = () => {
           </a>
         </div>
         <h3>OR</h3>
-
+        <h4> kiran </h4>
+        <h5> sammazy</h5>
+        {/* new line of comments is intall
+and email is send to this address of the schoool uniform and people will look after what they are been waiting to see  */}
         <a href="mailto:manandharkiran90@gmail.com">
           <div class="email-section flex">
             <div class="email flex">
