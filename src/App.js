@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Header } from "./Components/Header";
 import { Hero } from "./Components/Hero";
 import { Banner } from "./Components/Banner";
@@ -13,12 +14,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <Banner />
-      <Skills />
-      <Projects />
-      <AboutMe />
-      <ContactMe />
     </div>
   );
 }
